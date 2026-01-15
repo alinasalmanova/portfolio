@@ -1,0 +1,110 @@
+/* Общие настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  color: #fff;
+  background: linear-gradient(135deg, #a692c4, #7f67ac, #886db8); /* приглушённый фиолет/сирень */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 320px;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(10px);
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 30px 30px 0;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255,255,255,0.7);
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.button {
+  padding: 14px 28px;
+  background-color: rgba(255,255,255,0.15);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(255,255,255,0.3);
+  transform: translateY(-3px);
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 60px 80px;
+}
+
+.main-content h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about p {
+  max-width: 700px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+/* Таблица навыков */
+.skills table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.skills th, .skills td {
+  padding: 14px 20px;
+  text-align: left;
+}
+
+.skills th {
+  background-color: rgba(255,255,255,0.2);
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+.skills tr:nth-child(even) td {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 12px;
+}
+
+.skills tr:hover td {
+  background-color: rgba(255,255,255,0.25);
+  transition: 0.3s;
+}
